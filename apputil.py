@@ -53,5 +53,4 @@ class GroupEstimate:
         if missing_count > 0:
             print(f"Warning: {missing_count} observation(s) had unseen group(s); returning NaN for them.")
 
-        return predictions
-
+        return np.array(predictions)
